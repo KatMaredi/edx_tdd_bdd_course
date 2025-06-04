@@ -35,7 +35,9 @@ public class StackTestCases
     [Test]
     public void TestPeekingAtTheTopOfTheStack()
     {
-        throw new Exception("Not Implemented");
+        _stack.Push(6);
+        _stack.Push(7);
+        Assert.That(7,Is.EqualTo(_stack.Peek()));
     }
 
     [Test]
