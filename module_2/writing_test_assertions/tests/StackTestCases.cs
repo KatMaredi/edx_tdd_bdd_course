@@ -29,7 +29,13 @@ public class StackTestCases
     [Test]
     public void TestPoppingAnItemOffTheStack()
     {
-        throw new Exception("Not Implemented");
+        _stack.Push(7);
+        _stack.Push(9);
+        Assert.That(_stack.Pop(), Is.EqualTo(9));
+
+        Assert.That(_stack.Peek(), Is.EqualTo(7));
+        _stack.Pop();
+        Assert.That(_stack.IsEmpty(), Is.EqualTo(true));
     }
 
     [Test]
@@ -37,14 +43,14 @@ public class StackTestCases
     {
         _stack.Push(6);
         _stack.Push(7);
-        Assert.That(7,Is.EqualTo(_stack.Peek()));
+        Assert.That(_stack.Peek(), Is.EqualTo(7));
     }
 
     [Test]
     public void TestIfTheStackIsEmpty()
     {
-        Assert.That(_stack.IsEmpty,Is.True);
+        Assert.That(_stack.IsEmpty(), Is.True);
         _stack.Push(5);
-        Assert.That(_stack.IsEmpty,Is.False);
+        Assert.That(_stack.IsEmpty(), Is.EqualTo(false));
     }
 }
