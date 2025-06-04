@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "nFToDmY7OfQ=",
+  "success": true,
+  "projectFilePath": "/Users/katlegomaredi/Downloads/code/edx_tdd_bdd_course/module_2/writing_tests/writing_tests.csproj",
+  "expectedPackageFiles": [
+    "/Users/katlegomaredi/.nuget/packages/microsoft.applicationinsights/2.23.0/microsoft.applicationinsights.2.23.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/microsoft.testing.extensions.telemetry/1.7.0/microsoft.testing.extensions.telemetry.1.7.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/microsoft.testing.extensions.trxreport.abstractions/1.7.0/microsoft.testing.extensions.trxreport.abstractions.1.7.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/microsoft.testing.extensions.vstestbridge/1.7.0/microsoft.testing.extensions.vstestbridge.1.7.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/microsoft.testing.platform/1.7.0/microsoft.testing.platform.1.7.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/microsoft.testing.platform.msbuild/1.7.0/microsoft.testing.platform.msbuild.1.7.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/microsoft.testplatform.adapterutilities/17.13.0/microsoft.testplatform.adapterutilities.17.13.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/microsoft.testplatform.objectmodel/17.13.0/microsoft.testplatform.objectmodel.17.13.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/nunit/4.3.2/nunit.4.3.2.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/nunit.consolerunner/3.20.1/nunit.consolerunner.3.20.1.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/nunit3testadapter/5.1.0-alpha.3/nunit3testadapter.5.1.0-alpha.3.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
