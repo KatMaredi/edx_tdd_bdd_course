@@ -23,7 +23,9 @@ public class StackTestCases
     [Test]
     public void TestPushingItemToTheStack()
     {
-        throw new Exception("Not Implemented");
+        _stack.Push(6);
+        _stack.Push(7);
+        Assert.That(_stack.Peek(), Is.EqualTo(7));
     }
 
     [Test]
@@ -32,7 +34,6 @@ public class StackTestCases
         _stack.Push(7);
         _stack.Push(9);
         Assert.That(_stack.Pop(), Is.EqualTo(9));
-
         Assert.That(_stack.Peek(), Is.EqualTo(7));
         _stack.Pop();
         Assert.That(_stack.IsEmpty(), Is.EqualTo(true));
