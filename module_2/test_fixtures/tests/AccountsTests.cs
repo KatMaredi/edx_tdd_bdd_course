@@ -10,6 +10,7 @@ namespace test_fixtures.tests;
 public class AccountsTests
 {
     private AppDbContext _context;
+    private Account account;
     private const string JsonPath = "/Users/katlegomaredi/Documents/code/edx_tdd_bdd_course/module_2/test_fixtures/tests/fixtures/accounts.json";
 
     [OneTimeSetUp]
@@ -36,7 +37,6 @@ public class AccountsTests
     {
         _context.Accounts.RemoveRange(_context.Accounts);
         _context.SaveChanges();
-        SeedDataFromJson(JsonPath);
     }
 
     [TearDown]
@@ -62,6 +62,16 @@ public class AccountsTests
     //*********************************************************************************
     // TEST CASES
     //*********************************************************************************
-    
-    
+
+        [Test]
+        public void TestCreatingASingleAccount()
+        {
+            var jsonData = File.ReadAllText(JsonPath);
+            var accounts = JsonConvert.DeserializeObject<List<Account>>(jsonData);
+
+            var user = accounts[0];
+            user.Create(_context);
+            
+            Assert.That(Account.All(_context).Count,Is.EqualTo(1));
+        }
 }
