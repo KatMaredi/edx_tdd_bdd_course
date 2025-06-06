@@ -12,7 +12,7 @@ public class AccountsTests
     private AppDbContext _context;
     private Account account;
     private const string JsonPath = "/Users/katlegomaredi/Documents/code/edx_tdd_bdd_course/module_2/test_fixtures/tests/fixtures/accounts.json";
-
+    private List<Account> accounts;
     [OneTimeSetUp]
     public void SetupOnce()
     {
@@ -37,6 +37,9 @@ public class AccountsTests
     {
         _context.Accounts.RemoveRange(_context.Accounts);
         _context.SaveChanges();
+        
+        var jsonData = File.ReadAllText(JsonPath);
+        accounts = JsonConvert.DeserializeObject<List<Account>>(jsonData);
     }
 
     [TearDown]
@@ -50,7 +53,7 @@ public class AccountsTests
         if (!File.Exists(filePath)) return;
 
         var jsonData = File.ReadAllText(filePath);
-        var accounts = JsonConvert.DeserializeObject<List<Account>>(jsonData);
+        accounts = JsonConvert.DeserializeObject<List<Account>>(jsonData);
 
         if (accounts != null && accounts.Any())
         {
@@ -66,12 +69,20 @@ public class AccountsTests
         [Test]
         public void TestCreatingASingleAccount()
         {
-            var jsonData = File.ReadAllText(JsonPath);
-            var accounts = JsonConvert.DeserializeObject<List<Account>>(jsonData);
-
             var user = accounts[0];
             user.Create(_context);
             
             Assert.That(Account.All(_context).Count,Is.EqualTo(1));
+        }
+
+        [Test]
+        public void TestingCreatingAllAccounts()
+        {
+            foreach (var account in accounts)
+            {
+                account.Create(_context);
+            }
+            
+            Assert.That(Account.All(_context).Count,Is.EqualTo(5));
         }
 }
