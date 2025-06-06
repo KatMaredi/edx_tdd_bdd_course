@@ -14,7 +14,7 @@ public class StackTestCases
         _stack = new Stack();
     }
 
-    [TearDown]
+    [TearDown] 
     public void TearDown()
     {
         _stack = null;

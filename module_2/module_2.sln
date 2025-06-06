@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "writing_test_assertions", "writing_test_assertions\writing_test_assertions.csproj", "{7DAD5DDB-574A-460A-82DA-ECBC5D0C5DF1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_fixtures", "test_fixtures\test_fixtures.csproj", "{9C26DD92-C5B9-4C28-BD7B-08450F577F0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{7DAD5DDB-574A-460A-82DA-ECBC5D0C5DF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DAD5DDB-574A-460A-82DA-ECBC5D0C5DF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DAD5DDB-574A-460A-82DA-ECBC5D0C5DF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C26DD92-C5B9-4C28-BD7B-08450F577F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C26DD92-C5B9-4C28-BD7B-08450F577F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C26DD92-C5B9-4C28-BD7B-08450F577F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C26DD92-C5B9-4C28-BD7B-08450F577F0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
