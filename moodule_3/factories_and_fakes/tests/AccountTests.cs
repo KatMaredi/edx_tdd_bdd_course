@@ -113,17 +113,14 @@ public class AccountsTests
     [Test]
     public void TestFromDictMethod()
     {
-        var random = new Random();
-        var data = accounts[random.Next(0, accounts.Count)];
-        account = data;
-        var result = account.ToDict();
-        account.FromDict(result);
-        Assert.That(result["Id"], Is.EqualTo(account.Id));
-        Assert.That(result["Name"], Is.EqualTo(account.Name));
-        Assert.That(result["Email"], Is.EqualTo(account.Email));
-        Assert.That(result["PhoneNumber"], Is.EqualTo(account.PhoneNumber));
-        Assert.That(result["Disabled"], Is.EqualTo(account.Disabled));
-        Assert.That(result["DateJoined"], Is.EqualTo(account.DateJoined));
+        var data = AccountFactory.CreateAccount().ToDict();
+        account.FromDict(data);
+        Assert.That(data["Id"], Is.EqualTo(account.Id));
+        Assert.That(data["Name"], Is.EqualTo(account.Name));
+        Assert.That(data["Email"], Is.EqualTo(account.Email));
+        Assert.That(data["PhoneNumber"], Is.EqualTo(account.PhoneNumber));
+        Assert.That(data["Disabled"], Is.EqualTo(account.Disabled));
+        Assert.That(data["DateJoined"], Is.EqualTo(account.DateJoined));
     }
 
     [Test]
