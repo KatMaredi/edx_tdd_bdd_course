@@ -13,11 +13,6 @@ public class AccountsTests
     private AppDbContext _context;
     private Account account;
 
-    private const string JsonPath =
-        "/Users/katlegomaredi/Documents/code/edx_tdd_bdd_course/moodule_3/factories_and_fakes/tests/fixtures/accounts.json";
-
-    private List<Account> accounts;
-
     [OneTimeSetUp]
     public void SetupOnce()
     {
@@ -28,7 +23,6 @@ public class AccountsTests
         _context = new AppDbContext(options);
 
         _context.Database.EnsureCreated(); // Create the schema if it doesn't exist
-        SeedDataFromJson(JsonPath);
     }
 
     [OneTimeTearDown]
@@ -42,9 +36,6 @@ public class AccountsTests
     {
         _context.Accounts.RemoveRange(_context.Accounts);
         _context.SaveChanges();
-
-        var jsonData = File.ReadAllText(JsonPath);
-        accounts = JsonConvert.DeserializeObject<List<Account>>(jsonData);
         account = new Account();
     }
 
@@ -52,18 +43,6 @@ public class AccountsTests
     public void Teardown()
     {
         _context.ChangeTracker.Clear();
-    }
-
-    private void SeedDataFromJson(string filePath)
-    {
-        if (!File.Exists(filePath)) return;
-        var jsonData = File.ReadAllText(filePath);
-        accounts = JsonConvert.DeserializeObject<List<Account>>(jsonData);
-        if (accounts != null && accounts.Any())
-        {
-            _context.Accounts.AddRange(accounts);
-            _context.SaveChanges();
-        }
     }
 
     //*********************************************************************************
