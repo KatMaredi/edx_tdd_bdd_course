@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("test_fixtures")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4524da687af2836009e5cc246ab651c76f71123d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed1c5fd93a0e6a402c75560d43878f3cee2edcae")]
 [assembly: System.Reflection.AssemblyProductAttribute("test_fixtures")]
 [assembly: System.Reflection.AssemblyTitleAttribute("test_fixtures")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
