@@ -135,8 +135,21 @@ public class AccountsTests
         data.Create(_context);
         Assert.That(data.Id, Is.Not.Null);
         data.Name = "Foo";
+        data.Update(_context);
         var found = Account.Find(_context, data.Id);
         Assert.That(found.Name, Is.EqualTo("Foo"));
     }
+
+    [Test]
+    public void TestingDataValidationError()
+    {
+        var random = new Random();
+        var data = accounts[random.Next(0, accounts.Count)];
+        data.Create(_context);
+        data.Id = 0;
+        var ex = Assert.Throws<DataValidationException>(() => data.Update(_context));
+        Assert.That(ex.Message, Is.EqualTo("Update called with empty ID field"));
+    }
+    
     
 }
