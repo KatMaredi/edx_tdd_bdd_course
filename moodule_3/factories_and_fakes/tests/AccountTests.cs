@@ -101,9 +101,7 @@ public class AccountsTests
     [Test]
     public void TestingToDictMethod()
     {
-        var random = new Random();
-        var data = accounts[random.Next(0, accounts.Count)];
-        account = data;
+        var account = AccountFactory.CreateAccount();
         var result = account.ToDict();
         Assert.That(account.Name, Is.EqualTo(result["Name"]));
         Assert.That(account.Email, Is.EqualTo(result["Email"]));
