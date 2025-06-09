@@ -1,5 +1,6 @@
 using factories_and_fakes.data;
 using factories_and_fakes.models;
+using factories_and_fakes.tests.factories;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using NUnit.Framework;
@@ -82,12 +83,13 @@ public class AccountsTests
     [Test]
     public void TestingCreatingAllAccounts()
     {
-        foreach (var account in accounts)
+        for (int i = 0; i < 10; i++)
         {
+            var account = AccountFactory.CreateAccount();
             account.Create(_context);
         }
 
-        Assert.That(Account.All(_context).Count, Is.EqualTo(accounts.Count));
+        Assert.That(Account.All(_context).Count, Is.EqualTo(10));
     }
 
     [Test]
@@ -157,8 +159,8 @@ public class AccountsTests
         var random = new Random();
         var data = accounts[random.Next(0, accounts.Count)];
         data.Create(_context);
-        Assert.That(Account.All(_context).Count,Is.EqualTo(1));
+        Assert.That(Account.All(_context).Count, Is.EqualTo(1));
         data.Delete(_context);
-        Assert.That(Account.All(_context).Count,Is.EqualTo(0));
+        Assert.That(Account.All(_context).Count, Is.EqualTo(0));
     }
 }

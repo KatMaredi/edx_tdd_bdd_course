@@ -13,7 +13,12 @@ public class AccountFactory
         .RuleFor(a => a.Disabled, f => f.Random.Bool(0.1f))
         .RuleFor(a => a.DateJoined, f => f.Date.Past(3, DateTime.UtcNow));
 
-    private static List<Account> CreateMany(int amount)
+    public static Account CreateAccount()
+    {
+        return faker.Generate();
+    }
+
+    public static List<Account> CreateMany(int amount)
     {
         return faker.Generate(amount);
     }
