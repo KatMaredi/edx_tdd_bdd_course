@@ -138,8 +138,7 @@ public class AccountsTests
     [Test]
     public void TestingDataValidationError()
     {
-        var random = new Random();
-        var data = accounts[random.Next(0, accounts.Count)];
+        var data = AccountFactory.CreateAccount();
         data.Create(_context);
         data.Id = 0;
         var ex = Assert.Throws<DataValidationException>(() => data.Update(_context));
@@ -149,8 +148,7 @@ public class AccountsTests
     [Test]
     public void TestingDeletingAnAccount()
     {
-        var random = new Random();
-        var data = accounts[random.Next(0, accounts.Count)];
+        var data = AccountFactory.CreateAccount();
         data.Create(_context);
         Assert.That(Account.All(_context).Count, Is.EqualTo(1));
         data.Delete(_context);
