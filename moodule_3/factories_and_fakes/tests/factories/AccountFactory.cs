@@ -18,8 +18,8 @@ public class AccountFactory
         return faker.Generate();
     }
 
-    public static List<Account> CreateMany(int amount)
-    {
-        return faker.Generate(amount);
-    }
+    // public static List<Account> CreateMany(int amount)
+    // {
+    //     return faker.Generate(amount);
+    // }
 }

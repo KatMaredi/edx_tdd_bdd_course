@@ -126,8 +126,7 @@ public class AccountsTests
     [Test]
     public void TestingUpdatingAccount()
     {
-        var random = new Random();
-        var data = accounts[random.Next(0, accounts.Count)];
+        var data = AccountFactory.CreateAccount();
         data.Create(_context);
         Assert.That(data.Id, Is.Not.Null);
         data.Name = "Foo";
