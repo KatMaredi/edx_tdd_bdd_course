@@ -73,7 +73,7 @@ public class AccountsTests
     public void TestCreatingASingleAccount()
     {
         var random = new Random();
-        var user = accounts[random.Next(0,accounts.Count)];
+        var user = accounts[random.Next(0, accounts.Count)];
         user.Create(_context);
 
         Assert.That(Account.All(_context).Count, Is.EqualTo(1));
@@ -119,11 +119,24 @@ public class AccountsTests
         account = data;
         var result = account.ToDict();
         account.FromDict(result);
-        Assert.That(result["Id"],Is.EqualTo(account.Id));
-        Assert.That(result["Name"],Is.EqualTo(account.Name));
-        Assert.That(result["Email"],Is.EqualTo(account.Email));
-        Assert.That(result["PhoneNumber"],Is.EqualTo(account.PhoneNumber));
-        Assert.That(result["Disabled"],Is.EqualTo(account.Disabled));
-        Assert.That(result["DateJoined"],Is.EqualTo(account.DateJoined));
+        Assert.That(result["Id"], Is.EqualTo(account.Id));
+        Assert.That(result["Name"], Is.EqualTo(account.Name));
+        Assert.That(result["Email"], Is.EqualTo(account.Email));
+        Assert.That(result["PhoneNumber"], Is.EqualTo(account.PhoneNumber));
+        Assert.That(result["Disabled"], Is.EqualTo(account.Disabled));
+        Assert.That(result["DateJoined"], Is.EqualTo(account.DateJoined));
     }
+
+    [Test]
+    public void TestingUpdatingAccount()
+    {
+        var random = new Random();
+        var data = accounts[random.Next(0, accounts.Count)];
+        data.Create(_context);
+        Assert.That(data.Id, Is.Not.Null);
+        data.Name = "Foo";
+        var found = Account.Find(_context, data.Id);
+        Assert.That(found.Name, Is.EqualTo("Foo"));
+    }
+    
 }

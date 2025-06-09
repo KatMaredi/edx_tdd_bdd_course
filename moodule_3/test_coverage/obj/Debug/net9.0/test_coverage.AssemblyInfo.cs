@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("test_coverage")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed1c5fd93a0e6a402c75560d43878f3cee2edcae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da75a1eadae0573543b7ea515665ec6c1688c7b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("test_coverage")]
 [assembly: System.Reflection.AssemblyTitleAttribute("test_coverage")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
