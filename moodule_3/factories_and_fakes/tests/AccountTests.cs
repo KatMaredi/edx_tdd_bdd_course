@@ -73,9 +73,8 @@ public class AccountsTests
     [Test]
     public void TestCreatingASingleAccount()
     {
-        var random = new Random();
-        var user = accounts[random.Next(0, accounts.Count)];
-        user.Create(_context);
+        var account = AccountFactory.CreateAccount();
+        account.Create(_context);
 
         Assert.That(Account.All(_context).Count, Is.EqualTo(1));
     }
