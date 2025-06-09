@@ -150,6 +150,15 @@ public class AccountsTests
         var ex = Assert.Throws<DataValidationException>(() => data.Update(_context));
         Assert.That(ex.Message, Is.EqualTo("Update called with empty ID field"));
     }
-    
-    
+
+    [Test]
+    public void TestingDeletingAnAccount()
+    {
+        var random = new Random();
+        var data = accounts[random.Next(0, accounts.Count)];
+        data.Create(_context);
+        Assert.That(Account.All(_context).Count,Is.EqualTo(1));
+        data.Delete(_context);
+        Assert.That(Account.All(_context).Count,Is.EqualTo(0));
+    }
 }
