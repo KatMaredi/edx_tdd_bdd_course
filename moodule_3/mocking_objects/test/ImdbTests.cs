@@ -80,4 +80,15 @@ public class ImdbTests
         var results = await _imdb.SearchTitlesAsync("Bambi");
         Assert.That(results, Is.Empty);
     }
+
+    [Test]
+    public async Task TestingSearchingByTitleFailed()
+    {
+        fakeResponse = imdbData["INVALID_API"].ToString();
+        BuildImdb();
+        
+        var results = await _imdb.SearchTitlesAsync("Bambi");
+        Assert.That(results,Is.Not.Null);
+        Assert.That(results["errorMessage"],Is.EqualTo("Invalid API Key"));
+    }
 }
