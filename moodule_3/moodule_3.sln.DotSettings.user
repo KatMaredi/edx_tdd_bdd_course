@@ -6,5 +6,7 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::FD34E194-CF15-47FA-8CAD-E40E731E804F::net9.0::test_coverage.tests.AccountsTests&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::8E42FDC5-2FDF-4480-8F3D-1D16A7CA1C5E::net9.0::factories_and_fakes.tests.AccountsTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::E1B97731-9134-41DB-849D-9F0E214FF94A::net9.0::mocking_objects.test.ImdbTests.TestingSearchingByTitle&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::E1B97731-9134-41DB-849D-9F0E214FF94A::net9.0::mocking_objects.test.ImdbTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_coverage", "test_cover
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "factories_and_fakes", "factories_and_fakes\factories_and_fakes.csproj", "{8E42FDC5-2FDF-4480-8F3D-1D16A7CA1C5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mocking_objects", "mocking_objects\mocking_objects.csproj", "{E1B97731-9134-41DB-849D-9F0E214FF94A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{8E42FDC5-2FDF-4480-8F3D-1D16A7CA1C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E42FDC5-2FDF-4480-8F3D-1D16A7CA1C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E42FDC5-2FDF-4480-8F3D-1D16A7CA1C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B97731-9134-41DB-849D-9F0E214FF94A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B97731-9134-41DB-849D-9F0E214FF94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B97731-9134-41DB-849D-9F0E214FF94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B97731-9134-41DB-849D-9F0E214FF94A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
