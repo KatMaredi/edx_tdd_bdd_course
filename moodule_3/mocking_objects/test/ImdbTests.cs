@@ -91,4 +91,16 @@ public class ImdbTests
         Assert.That(results,Is.Not.Null);
         Assert.That(results["errorMessage"],Is.EqualTo("Invalid API Key"));
     }
+
+    [Test]
+    public async Task TestingMovieRatings()
+    {
+        fakeResponse = imdbData["GOOD_RATING"].ToString();
+        BuildImdb();
+
+        var results = await _imdb.MovieRatingAsync("tt1375666");
+        Assert.That(results["title"],Is.EqualTo("Bambi"));
+        Assert.That(results["filmAffinity"],Is.EqualTo(3));
+        Assert.That(results["rottenTomatoes"],Is.EqualTo(5));
+    }
 }
