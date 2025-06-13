@@ -69,5 +69,15 @@ public class ImdbTests
         Assert.That(resultsList, Is.Not.Null);
         Assert.That(resultsList[0]["id"].ToString(), Is.EqualTo("tt1375666"));
     }
-    
+
+    [Test]
+    public async Task TestingSearchingWithNoResults()
+    {
+        httpCode = HttpStatusCode.NotFound;
+        fakeResponse = "";
+        BuildImdb();
+
+        var results = await _imdb.SearchTitlesAsync("Bambi");
+        Assert.That(results, Is.Empty);
+    }
 }
