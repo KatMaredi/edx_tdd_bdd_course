@@ -56,4 +56,14 @@ public class CounterTests
         Assert.That(data?.Name,Is.EqualTo("bin"));
         Assert.That(data?.Value,Is.EqualTo(0));
     }
+
+    [Test]
+    public async Task ShouldDeleteACounter()
+    {
+        var response = await _client.PostAsync("/counters/fob", null);
+        Assert.That(response.StatusCode,Is.EqualTo(HttpStatusCode.Created));
+
+        var response2 = await _client.DeleteAsync("/counters/fob");
+        Assert.That(response2.StatusCode,Is.EqualTo(HttpStatusCode.NoContent));
+    }
 }

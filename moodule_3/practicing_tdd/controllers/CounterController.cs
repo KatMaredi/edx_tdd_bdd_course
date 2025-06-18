@@ -35,4 +35,14 @@ public class CounterController : ControllerBase
 
         return Ok(new { counter.Name, counter.Value });
     }
+
+    [HttpDelete("{name}")]
+    public IActionResult DeleteCounter(string name)
+    {
+        Console.WriteLine($"Request to delete counter: {name}");
+
+        Counters[name] = null;
+
+        return NoContent();
+    }
 }
