@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "irI1tA9rfVI=",
+  "success": true,
+  "projectFilePath": "/Users/katlegomaredi/Documents/code/edx_tdd_bdd_course/module_4/writingFeatureFiles/writingFeatureFiles.csproj",
+  "expectedPackageFiles": [
+    "/Users/katlegomaredi/.nuget/packages/microsoft.aspnetcore.openapi/9.0.5/microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
+    "/Users/katlegomaredi/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

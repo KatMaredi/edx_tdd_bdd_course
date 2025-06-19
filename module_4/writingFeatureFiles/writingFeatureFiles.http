@@ -1,0 +1,6 @@
+@writingFeatureFiles_HostAddress = http://localhost:5003
+
+GET {{writingFeatureFiles_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
