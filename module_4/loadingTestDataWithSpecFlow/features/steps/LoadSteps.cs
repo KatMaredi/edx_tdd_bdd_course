@@ -20,7 +20,7 @@ public class LoadSteps
     }
 
     [Given("Given the following pets")]
-    public async Task RefreshAllThePetsInTheDataBaseAsync()
+    public async Task RefreshAllThePetsInTheDataBaseAsync(Table table)
     {
         // List all pets and delete them on by one
         var response = await _client.GetAsync($"{_context.BaseUrl}/pets");
@@ -33,6 +33,26 @@ public class LoadSteps
             var petId = pet["id"]?.ToString();
             var deleteResponse = await _client.DeleteAsync($"{_context.BaseUrl}/pets/{petId}");
             Assert.That(deleteResponse.StatusCode,Is.EqualTo(HttpStatusCode.NoContent));
+        }
+        
+        // Load the database with Pets
+        foreach (var row in table.Rows)
+        {
+            var payload = new
+            {
+                name = row["name"],
+                category = row["category"],
+                available = row["available"].ToLower() switch
+                {
+                    "true" or "1" => true,
+                    _ => false
+                },
+                gender = row["gender"],
+                birthday = row["birthday"]
+            };
+
+            var postResponse = await _client.PostAsJsonAsync($"{_context.BaseUrl}/pets", payload);
+            Assert.That(postResponse.StatusCode,Is.EqualTo(HttpStatusCode.Created));
         }
     }
 }
