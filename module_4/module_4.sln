@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingUpEnviroment", "Sett
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "writingFeatureFiles", "writingFeatureFiles\writingFeatureFiles.csproj", "{61DAC8CB-181F-4A1B-A5DA-DEA9DA174FFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "loadingTestDataWithSpecFlow", "loadingTestDataWithSpecFlow\loadingTestDataWithSpecFlow.csproj", "{4CEB1300-A456-4837-A6BF-961A3B1D63E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{61DAC8CB-181F-4A1B-A5DA-DEA9DA174FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61DAC8CB-181F-4A1B-A5DA-DEA9DA174FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61DAC8CB-181F-4A1B-A5DA-DEA9DA174FFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CEB1300-A456-4837-A6BF-961A3B1D63E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CEB1300-A456-4837-A6BF-961A3B1D63E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CEB1300-A456-4837-A6BF-961A3B1D63E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CEB1300-A456-4837-A6BF-961A3B1D63E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

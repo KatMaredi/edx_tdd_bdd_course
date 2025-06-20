@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("writingFeatureFiles")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f485cdeca41beca94b82bdfa76d19b5902e039dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e33c46a9c661ffb484fa0c21d93ac09d7a726c5e")]
 [assembly: System.Reflection.AssemblyProductAttribute("writingFeatureFiles")]
 [assembly: System.Reflection.AssemblyTitleAttribute("writingFeatureFiles")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
