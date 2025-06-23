@@ -1,6 +1,0 @@
-@practicing_tdd_HostAddress = http://localhost:5029
-
-GET {{practicing_tdd_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
