@@ -19,7 +19,7 @@ public class LoadSteps
         _client = new HttpClient();
     }
 
-    [Given("Given the following pets")]
+    [Given("The following pets")]
     public async Task RefreshAllThePetsInTheDataBaseAsync(Table table)
     {
         // List all pets and delete them on by one

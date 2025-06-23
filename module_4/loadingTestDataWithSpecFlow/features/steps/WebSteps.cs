@@ -17,7 +17,7 @@ public class WebSteps
         _context = context;
     }
 
-    [Given("I am on the {string} ")]
+    [Given("I am on the {string}")]
     public void GivenIAmOnTheHomePage(string page)
     {
         _context.WebDriver.Navigate().GoToUrl(_context.BaseUrl);

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("loadingTestDataWithSpecFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e33c46a9c661ffb484fa0c21d93ac09d7a726c5e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a76c80ec75fbbd39058c5442f4550304950ea99c")]
 [assembly: System.Reflection.AssemblyProductAttribute("loadingTestDataWithSpecFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("loadingTestDataWithSpecFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
