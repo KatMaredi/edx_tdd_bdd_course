@@ -1,0 +1,6 @@
+@tdd_productRestApi_HostAddress = http://localhost:5044
+
+GET {{tdd_productRestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

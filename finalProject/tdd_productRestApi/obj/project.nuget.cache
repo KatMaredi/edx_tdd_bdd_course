@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tVqnGDLPlPw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Fezao187\\Documents\\My Code\\edx_tdd_bdd_course\\finalProject\\tdd_productRestApi\\tdd_productRestApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Fezao187\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\Fezao187\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
