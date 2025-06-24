@@ -18,7 +18,7 @@ public class WebSteps
     {
     }
 
-    [Given(@"I am the ""(.*)""")]
+    [Given(@"I am on the ""(.*)""")]
     public void GivenIAmThe(string p0)
     {
     }

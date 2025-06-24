@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "generatingStepsWithSpecFlow", "generatingStepsWithSpecFlow\generatingStepsWithSpecFlow.csproj", "{49872629-F3DF-41B7-B203-950A4ECB32E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "variableSubstituition", "variableSubstituition\variableSubstituition.csproj", "{1295F091-616A-4FF0-B5E9-4661ED51F871}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{49872629-F3DF-41B7-B203-950A4ECB32E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49872629-F3DF-41B7-B203-950A4ECB32E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49872629-F3DF-41B7-B203-950A4ECB32E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1295F091-616A-4FF0-B5E9-4661ED51F871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1295F091-616A-4FF0-B5E9-4661ED51F871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1295F091-616A-4FF0-B5E9-4661ED51F871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1295F091-616A-4FF0-B5E9-4661ED51F871}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

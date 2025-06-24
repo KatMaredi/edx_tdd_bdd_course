@@ -1,6 +1,6 @@
-using generatingStepsWithSpecFlow.features.contexts;
+using variableSubstitution.features.contexts;
 
-namespace generatingStepsWithSpecFlow.features.steps;
+namespace variableSubstitution.features.steps;
 
 using System.Net;
 using Newtonsoft.Json.Linq;
