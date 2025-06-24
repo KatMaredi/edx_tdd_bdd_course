@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("generatingStepsWithSpecFlow")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a76c80ec75fbbd39058c5442f4550304950ea99c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76d4ed280d06677aa3d395e9a46aabdb54ef065f")]
 [assembly: System.Reflection.AssemblyProductAttribute("generatingStepsWithSpecFlow")]
 [assembly: System.Reflection.AssemblyTitleAttribute("generatingStepsWithSpecFlow")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
