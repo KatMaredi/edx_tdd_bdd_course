@@ -35,8 +35,8 @@ namespace generatingStepsWithSpecFlow.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "features", "Search for pets by category", "As a pet shop customer\nI need to be able to search for a pet by category\nSo that " +
-                    "I only see the category of the pet I am interested in buying", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "features", "Search for pets by category", "As a pet shop customer\r\nI need to be able to search for a pet by category\r\nSo tha" +
+                    "t I only see the category of the pet I am interested in buying", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -128,7 +128,7 @@ namespace generatingStepsWithSpecFlow.Features
     this.FeatureBackground();
 #line hidden
 #line 15
-        testRunner.Given("I am the \"Home Page\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+        testRunner.Given("I am on the \"Home Page\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 16
         testRunner.When("I set the \"Category\" to \"dog\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
