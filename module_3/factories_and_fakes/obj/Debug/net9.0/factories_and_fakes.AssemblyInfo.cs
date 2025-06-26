@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("factories_and_fakes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43259affb036ec1fb9676962632db15748c88938")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c7a5bc8ff8d41686bff8d6c6104aab139085b8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("factories_and_fakes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("factories_and_fakes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4985,19 +4985,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fezao187\\.nuget\\packages\\": {}
+    "/Users/katlegomaredi/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fezao187\\Documents\\My Code\\edx_tdd_bdd_course\\module_5\\variableSubstituition\\variableSubstituition.csproj",
+      "projectUniqueName": "/Users/katlegomaredi/Documents/code/edx_tdd_bdd_course/module_5/variableSubstituition/variableSubstituition.csproj",
       "projectName": "variableSubstituition",
-      "projectPath": "C:\\Users\\Fezao187\\Documents\\My Code\\edx_tdd_bdd_course\\module_5\\variableSubstituition\\variableSubstituition.csproj",
-      "packagesPath": "C:\\Users\\Fezao187\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fezao187\\Documents\\My Code\\edx_tdd_bdd_course\\module_5\\variableSubstituition\\obj\\",
+      "projectPath": "/Users/katlegomaredi/Documents/code/edx_tdd_bdd_course/module_5/variableSubstituition/variableSubstituition.csproj",
+      "packagesPath": "/Users/katlegomaredi/.nuget/packages/",
+      "outputPath": "/Users/katlegomaredi/Documents/code/edx_tdd_bdd_course/module_5/variableSubstituition/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Fezao187\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/katlegomaredi/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -5063,7 +5063,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Fezao187\\.dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

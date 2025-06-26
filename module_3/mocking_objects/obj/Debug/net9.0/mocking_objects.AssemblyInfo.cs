@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mocking_objects")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b28ccc262f80c3b722ee8439347d7366f3f2d44")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c7a5bc8ff8d41686bff8d6c6104aab139085b8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("mocking_objects")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mocking_objects")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

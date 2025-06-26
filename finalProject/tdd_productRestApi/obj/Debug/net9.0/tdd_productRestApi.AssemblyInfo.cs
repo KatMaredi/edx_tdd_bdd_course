@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("tdd_productRestApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d377f2612c4bd31e66576e0f5f6464a947417f7a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c7a5bc8ff8d41686bff8d6c6104aab139085b8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("tdd_productRestApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("tdd_productRestApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

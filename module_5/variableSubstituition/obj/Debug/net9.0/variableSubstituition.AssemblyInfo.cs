@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("variableSubstituition")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e748eb5d541669a46a98da05245e265e4bc617d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7c7a5bc8ff8d41686bff8d6c6104aab139085b8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("variableSubstituition")]
 [assembly: System.Reflection.AssemblyTitleAttribute("variableSubstituition")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

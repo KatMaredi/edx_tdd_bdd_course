@@ -1,13 +1,15 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/katlegomaredi/Library/Caches/JetBrains/Rider2025.1/resharper-host/temp/Rider/vAny/CoverageData/_moodule_3.-1010433691/Snapshot/snapshot.utdcvr</s:String>
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=03ed7ae1_002Db165_002D41b7_002Db9dc_002Dcd7d40564d08/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CounterTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=03ed7ae1_002Db165_002D41b7_002Db9dc_002Dcd7d40564d08/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CounterTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::07C1F6F6-5D35-4353-B889-9706D64A6ECC::net9.0::practicing_tdd.tests.CounterTests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::8E42FDC5-2FDF-4480-8F3D-1D16A7CA1C5E::net9.0::factories_and_fakes.tests.AccountsTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06d5a89a_002Da591_002D4465_002D8b48_002Df8584ea0cd45/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AccountsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=06d5a89a_002Da591_002D4465_002D8b48_002Df8584ea0cd45/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AccountsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::FD34E194-CF15-47FA-8CAD-E40E731E804F::net9.0::test_coverage.tests.AccountsTests&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::8E42FDC5-2FDF-4480-8F3D-1D16A7CA1C5E::net9.0::factories_and_fakes.tests.AccountsTests&lt;/TestId&gt;
