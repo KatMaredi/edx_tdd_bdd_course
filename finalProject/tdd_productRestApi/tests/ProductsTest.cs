@@ -123,6 +123,16 @@ public class ProductsTest
         Assert.That(allProductsFromDb[0].Id,Is.EqualTo(originalId));
         Assert.That(allProductsFromDb[0].Description,Is.EqualTo("Testing"));
     }
-    
-    
+
+    [Test]
+    public async Task ShouldDeleteProductFromTheDb()
+    {
+        var createdProduct = ProductFactory.CreateProduct();
+        await createdProduct.CreateAsync(_context);
+        Assert.That(Product.FindAll(_context).Count,Is.EqualTo(1));
+
+        await createdProduct.DeleteAsync(_context);
+        
+        Assert.That(Product.FindAll(_context),Is.Empty);
+    }
 }
