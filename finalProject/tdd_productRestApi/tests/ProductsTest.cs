@@ -184,4 +184,20 @@ public class ProductsTest
             Assert.That(productFromDb.Available,Is.True);
         }
     }
+    
+    [Test]
+    public async Task ShouldFindProductByCategory()
+    {
+        var createdProducts = ProductFactory.CreateBatch(10);
+        foreach (var product in createdProducts)
+        {
+            await product.CreateAsync(_context);
+        }
+
+        var productsFromDb = Product.FindByCategory(_context, Category.AUTOMOTIVE);
+        foreach (var productFromDb in productsFromDb)
+        {
+            Assert.That(productFromDb.Category,Is.EqualTo(Category.AUTOMOTIVE));
+        }
+    }
 }
