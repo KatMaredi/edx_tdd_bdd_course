@@ -101,4 +101,28 @@ public class ProductsTest
         Assert.That(productFromDb.Available,Is.EqualTo(createdProduct.Available));
         Assert.That(productFromDb.Category,Is.EqualTo(createdProduct.Category));
     }
+
+    [Test]
+    public async Task ShouldUpdateProductInTheDb()
+    {
+        var createdProduct = ProductFactory.CreateProduct();
+        await createdProduct.CreateAsync(_context);
+        
+        Assert.That(createdProduct.Id,Is.Not.Null);
+
+        createdProduct.Description = "Testing";
+        var originalId = createdProduct.Id;
+        await createdProduct.UpdateAsync(_context);
+        
+        Assert.That(createdProduct.Id,Is.EqualTo(originalId));
+        Assert.That(createdProduct.Description, Is.EqualTo("Testing"));
+
+        var allProductsFromDb = Product.FindAll(_context);
+        
+        Assert.That(allProductsFromDb.Count,Is.EqualTo(1));
+        Assert.That(allProductsFromDb[0].Id,Is.EqualTo(originalId));
+        Assert.That(allProductsFromDb[0].Description,Is.EqualTo("Testing"));
+    }
+    
+    
 }
