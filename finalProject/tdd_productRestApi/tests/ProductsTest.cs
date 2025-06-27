@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using tdd_productRestApi.data;
 using tdd_productRestApi.models;
+using tdd_productRestApi.tests.factories;
 
 namespace tdd_productRestApi.tests;
 
@@ -64,5 +65,24 @@ public class ProductsTest
         Assert.That(product.Price,Is.EqualTo(12.50));
         Assert.That(product.Available,Is.EqualTo(true));
         Assert.That(product.Category,Is.EqualTo(Category.CLOTHS));
+    }
+
+    [Test]
+    public async Task ShouldAddAProductAndAddToTheDatabase()
+    {
+        var allProducts = Product.FindAll(_context);
+        Assert.That(allProducts,Is.Empty);
+
+        var createdProduct = ProductFactory.CreateProduct();
+        await createdProduct.CreateAsync(_context);
+        Assert.That(createdProduct.Id,Is.Not.Null);
+        var productsFromDb = Product.FindAll(_context);
+        Assert.That(productsFromDb.Count,Is.EqualTo(1));
+       
+        Assert.That(productsFromDb[0].Name,Is.EqualTo(createdProduct.Name));
+        Assert.That(productsFromDb[0].Description,Is.EqualTo(createdProduct.Description));
+        Assert.That(productsFromDb[0].Price,Is.EqualTo(createdProduct.Price));
+        Assert.That(productsFromDb[0].Available,Is.EqualTo(createdProduct.Available));
+        Assert.That(productsFromDb[0].Category,Is.EqualTo(createdProduct.Category));
     }
 }
