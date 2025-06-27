@@ -135,4 +135,19 @@ public class ProductsTest
         
         Assert.That(Product.FindAll(_context),Is.Empty);
     }
+
+    [Test]
+    public async Task ShouldListAllProductsFromTheDb()
+    {
+        Assert.That(Product.FindAll(_context),Is.Empty);
+
+        for (int i = 0; i < 5; i++)
+        {
+            var createdProduct = ProductFactory.CreateProduct();
+            await createdProduct.CreateAsync(_context);
+        }
+        
+        Assert.That(Product.FindAll(_context).Count,Is.EqualTo(5));
+    }
+    
 }
