@@ -85,4 +85,20 @@ public class ProductsTest
         Assert.That(productsFromDb[0].Available,Is.EqualTo(createdProduct.Available));
         Assert.That(productsFromDb[0].Category,Is.EqualTo(createdProduct.Category));
     }
+
+    [Test]
+    public async Task ShouldRetrieveProductFromTheDatabase()
+    {
+        var createdProduct = ProductFactory.CreateProduct();
+        await createdProduct.CreateAsync(_context);
+        Assert.That(createdProduct.Id,Is.Not.Null);
+
+        var productFromDb = Product.FindById(_context, createdProduct.Id);
+        
+        Assert.That(productFromDb.Name,Is.EqualTo(createdProduct.Name));
+        Assert.That(productFromDb.Description,Is.EqualTo(createdProduct.Description));
+        Assert.That(productFromDb.Price,Is.EqualTo(createdProduct.Price));
+        Assert.That(productFromDb.Available,Is.EqualTo(createdProduct.Available));
+        Assert.That(productFromDb.Category,Is.EqualTo(createdProduct.Category));
+    }
 }
