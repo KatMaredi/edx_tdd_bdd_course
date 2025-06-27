@@ -17,4 +17,9 @@ public class ProductFactory
     {
         return faker.Generate();
     }
+
+    public static List<Product> CreateBatch(int num)
+    {
+        return faker.Generate(num);
+    }
 }

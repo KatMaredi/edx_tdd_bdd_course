@@ -149,5 +149,23 @@ public class ProductsTest
         
         Assert.That(Product.FindAll(_context).Count,Is.EqualTo(5));
     }
-    
+
+    [Test]
+    public async Task ShouldFindProductByName()
+    {
+        var createdProducts = ProductFactory.CreateBatch(5);
+
+        foreach (var product in createdProducts)
+        {
+            await product.CreateAsync(_context);
+        }
+
+        createdProducts[0].Name = "Test";
+        createdProducts[1].Name = "Test";
+        await createdProducts[0].UpdateAsync(_context);
+        await createdProducts[1].UpdateAsync(_context);
+        
+        var productsFromDb=Product.FindByName(_context,"Test");
+        Assert.That(productsFromDb.Count,Is.EqualTo(2));
+    }
 }
