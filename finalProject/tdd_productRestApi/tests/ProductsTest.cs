@@ -168,4 +168,20 @@ public class ProductsTest
         var productsFromDb=Product.FindByName(_context,"Test");
         Assert.That(productsFromDb.Count,Is.EqualTo(2));
     }
+
+    [Test]
+    public async Task ShouldFindProductByAvailability()
+    {
+        var createdProducts = ProductFactory.CreateBatch(10);
+        foreach (var product in createdProducts)
+        {
+           await product.CreateAsync(_context);
+        }
+
+        var productsFromDb = Product.FindByAvailability(_context, true);
+        foreach (var productFromDb in productsFromDb)
+        {
+            Assert.That(productFromDb.Available,Is.True);
+        }
+    }
 }
