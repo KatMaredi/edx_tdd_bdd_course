@@ -101,10 +101,10 @@ public class Product
         return context.Products.ToList();
     }
 
-    public static Product FindById(AppDbContext context, int productId)
+    public async static Task<Product> FindByIdAsync(AppDbContext context, int productId)
     {
         _logger.LogInformation("Finds a product by its Id");
-        return context.Products.Find(productId);
+        return await context.Products.FindAsync(productId);
     }
 
     public static List<Product> FindByName(AppDbContext context, string name)

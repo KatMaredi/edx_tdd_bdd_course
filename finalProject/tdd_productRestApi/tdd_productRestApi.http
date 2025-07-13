@@ -1,6 +1,13 @@
 @tdd_productRestApi_HostAddress = http://localhost:5044
 
-GET {{tdd_productRestApi_HostAddress}}/weatherforecast/
-Accept: application/json
+### Create product
+POST {{tdd_productRestApi_HostAddress}}/api/Products
+Content-Type: application/json
 
-###
+{
+  "name": "Test Product",
+  "description": "A test product",
+  "price": 99.99,
+  "available": true
+}
+

@@ -93,7 +93,7 @@ public class ProductsTest
         await createdProduct.CreateAsync(_context);
         Assert.That(createdProduct.Id,Is.Not.Null);
 
-        var productFromDb = Product.FindById(_context, createdProduct.Id);
+        var productFromDb = await Product.FindByIdAsync(_context, createdProduct.Id);
         
         Assert.That(productFromDb.Name,Is.EqualTo(createdProduct.Name));
         Assert.That(productFromDb.Description,Is.EqualTo(createdProduct.Description));

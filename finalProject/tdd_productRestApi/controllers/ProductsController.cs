@@ -9,6 +9,7 @@ namespace tdd_productRestApi.controllers;
 public class ProductsController : ControllerBase
 {
     private readonly AppDbContext _context;
+    public static readonly Dictionary<string, Product> Products = new();
 
     public ProductsController(AppDbContext context)
     {
@@ -19,7 +20,14 @@ public class ProductsController : ControllerBase
     public async Task<ActionResult<Product>> CreateProduct(Product product)
     {
         await product.CreateAsync(_context);
-        
-        return Created("/",product);
+
+        return Created("/", product);
+    }
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Product>> GetProduct(int id)
+    {
+        var product = await Product.FindByIdAsync(_context, id);
+        return Ok(product);
     }
 }
