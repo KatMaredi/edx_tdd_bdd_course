@@ -30,4 +30,19 @@ public class ProductsController : ControllerBase
         var product = await Product.FindByIdAsync(_context, id);
         return Ok(product);
     }
+
+    [HttpPut("{id}")]
+    public async Task<ActionResult<Product>> UpdateProductAsync(int id,Product product)
+    {
+        await product.UpdateAsync(_context);
+        return Ok(product);
+    }
+
+    [HttpDelete("{id}")]
+    public async Task<ActionResult<Product>> DeleteProductAsync(int id)
+    {
+        var product = await Product.FindByIdAsync(_context,id);
+        await product.DeleteAsync(_context);
+        return Ok(product);
+    }
 }

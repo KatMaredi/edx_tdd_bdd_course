@@ -3,7 +3,7 @@
 	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/katlegomaredi/Library/Caches/JetBrains/Rider2025.1/resharper-host/temp/Rider/vAny/CoverageData/_finalProject.554220052/Snapshot/snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2dbe250f_002Dbc19_002D4e32_002Dbe60_002D7904263416c0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ShouldReadAProduct" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::16D46083-5065-499A-9CCA-7CCAB4EF6887::net9.0::tdd_productRestApi.tests.ProductControllerTests.ShouldReadAProduct&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::16D46083-5065-499A-9CCA-7CCAB4EF6887::net9.0::tdd_productRestApi.tests.ProductControllerTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	
